@@ -1,0 +1,22 @@
+{
+  
+        "LambdaFunctionConfigurations": [
+            {
+                 
+                "LambdaFunctionArn": "arn:aws:lambda:us-west-1:768648327470:function:hamed-push-cli", 
+                "Events": [
+                    "s3:ObjectCreated:*"
+                ], 
+                "Filter": {
+                    "Key": {
+                        "FilterRules": [
+                            {
+                                "Name": "prefix", 
+                                "Value": "/"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
